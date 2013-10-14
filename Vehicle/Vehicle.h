@@ -11,13 +11,13 @@
 @interface Vehicle : NSObject
 
 @property int hubraum;
-@property NSString * kennzeichen;
+@property NSString* kennzeichen;
 
--(id)vehicleWith:(int)aCapacity and: (NSString *)aPlate;
+-(id)vehicleWith:(int)aCapacity and: (NSString* )aPlate;
 
 -(int)capacity;
 
--(NSString *)plate;
+-(NSString* )plate;
 
 -(double)tax;
 

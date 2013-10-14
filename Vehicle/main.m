@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Vehicle.h"
+#import "SeasonalVehicle.h"
 
 int main(int argc, const char * argv[])
 {
@@ -63,7 +64,14 @@ int main(int argc, const char * argv[])
             
             //Print result
             
+            SeasonalVehicle *vehicle = [[SeasonalVehicle alloc] vehicleWith:hubraum and:inputString from:beginn and:ende];
             
+            printf("\nIhre Angaben:\n");
+            printf("Hubraum: %i\n", [vehicle capacity]);
+            printf("Kennzeichen: %s\n", [[vehicle plate]UTF8String]);
+            printf("Gültigkeitsdauer: %s\n", [[vehicle validTill]UTF8String]);
+            
+            printf("Steuer: %f Euro", [vehicle limitedTax]);
         }
         
     }

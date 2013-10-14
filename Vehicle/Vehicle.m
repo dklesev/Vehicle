@@ -10,8 +10,8 @@
 
 @implementation Vehicle
 
--(id)vehicleWith:(int)aCapacity and: (NSString *)aPlate{
-    Vehicle *vehicle = [[Vehicle alloc] init];
+-(id)vehicleWith:(int)aCapacity and: (NSString* )aPlate{
+    Vehicle* vehicle = [[Vehicle alloc] init];
     [vehicle setHubraum: aCapacity];
     [vehicle setKennzeichen: aPlate];
     return vehicle;
@@ -21,7 +21,7 @@
     return _hubraum;
 }
 
--(NSString *)plate{
+-(NSString* )plate{
     return _kennzeichen;
 }
 

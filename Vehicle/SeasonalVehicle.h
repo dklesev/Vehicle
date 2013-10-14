@@ -10,4 +10,13 @@
 
 @interface SeasonalVehicle : Vehicle
 
+@property NSString* beginn;
+@property NSString* ende;
+
+-(id)vehicleWith:(int)aCapacity and: (NSString *)aPlate from:(NSString *)beginn and: (NSString *)ende;
+
+-(NSString* )validTill;
+
+-(double)limitedTax;
+
 @end
