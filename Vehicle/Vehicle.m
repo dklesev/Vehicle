@@ -14,8 +14,10 @@
     
     if (!(self = [super init]))
         return nil;
+    
     self.capacity = capacity;
     self.plate = plate;
+    
     return self;
     
 }
@@ -48,6 +50,7 @@
 
 - (int) tax {
     
+    //Pro 100m^2 Hubraum 5 Euro
     return ((int)(self.capacity / 100)) * 5;
     
 }
