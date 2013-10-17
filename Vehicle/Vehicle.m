@@ -22,13 +22,13 @@
 
 - (int) capacity {
     
-    return self.capacity;
+    return _capacity;
     
 }
 
 - (NSString*) plate {
     
-    return self.plate;
+    return _plate;
     
 }
 
