@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SeasonalVehicle.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        SeasonalVehicle* sv = [[SeasonalVehicle alloc] initWithCapacity:200 AndPlate:@"Hallo" AndSeasonBegin:5 AndSeasonEnd:6];
+        printf("%d", [sv tax]);
         
     }
     return 0;

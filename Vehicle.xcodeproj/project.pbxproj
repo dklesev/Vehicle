@@ -10,6 +10,8 @@
 		CC86EF1018101BD3002603AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC86EF0F18101BD3002603AC /* Foundation.framework */; };
 		CC86EF1318101BD3002603AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86EF1218101BD3002603AC /* main.m */; };
 		CC86EF1718101BD3002603AC /* Vehicle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC86EF1618101BD3002603AC /* Vehicle.1 */; };
+		CC86EF1F18101BFB002603AC /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86EF1E18101BFB002603AC /* Vehicle.m */; };
+		CC86EF2218101DBB002603AC /* SeasonalVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = CC86EF2118101DBB002603AC /* SeasonalVehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		CC86EF1218101BD3002603AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC86EF1518101BD3002603AC /* Vehicle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vehicle-Prefix.pch"; sourceTree = "<group>"; };
 		CC86EF1618101BD3002603AC /* Vehicle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Vehicle.1; sourceTree = "<group>"; };
+		CC86EF1D18101BFB002603AC /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		CC86EF1E18101BFB002603AC /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		CC86EF2018101DBB002603AC /* SeasonalVehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasonalVehicle.h; sourceTree = "<group>"; };
+		CC86EF2118101DBB002603AC /* SeasonalVehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeasonalVehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,10 @@
 				CC86EF1218101BD3002603AC /* main.m */,
 				CC86EF1618101BD3002603AC /* Vehicle.1 */,
 				CC86EF1418101BD3002603AC /* Supporting Files */,
+				CC86EF1D18101BFB002603AC /* Vehicle.h */,
+				CC86EF1E18101BFB002603AC /* Vehicle.m */,
+				CC86EF2018101DBB002603AC /* SeasonalVehicle.h */,
+				CC86EF2118101DBB002603AC /* SeasonalVehicle.m */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -139,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC86EF2218101DBB002603AC /* SeasonalVehicle.m in Sources */,
+				CC86EF1F18101BFB002603AC /* Vehicle.m in Sources */,
 				CC86EF1318101BD3002603AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
