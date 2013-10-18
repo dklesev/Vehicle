@@ -12,7 +12,6 @@
 
 @property int saisonBeginn;
 @property int saisonEnde;
-@property float steuersatz;
 
 - (id) initWithCapacity:(int)capacity AndPlate:(NSString *)plate AndSeasonBegin: (int)begin AndSeasonEnd: (int)end;
 
