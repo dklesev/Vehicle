@@ -13,7 +13,7 @@
 @property int hubraum;
 @property NSString* kennzeichen;
 
--(id)vehicleWith:(int)aCapacity and: (NSString* )aPlate;
+-(id)initWith:(int)aCapacity and: (NSString* )aPlate;
 
 -(int)capacity;
 

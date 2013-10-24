@@ -13,7 +13,7 @@
 @property NSString* beginn;
 @property NSString* ende;
 
--(id)vehicleWith:(int)aCapacity and: (NSString *)aPlate from:(NSString *)beginn and: (NSString *)ende;
+-(id)initWith:(int)aCapacity and: (NSString *)aPlate from:(NSString *)beginn and: (NSString *)ende;
 
 -(NSString* )validTill;
 

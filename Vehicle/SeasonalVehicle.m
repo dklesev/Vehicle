@@ -10,13 +10,12 @@
 
 @implementation SeasonalVehicle
 
--(id)vehicleWith:(int)aCapacity and: (NSString *)aPlate from:(NSString *)beginn and: (NSString *)ende{
-    SeasonalVehicle *vehicle = [[SeasonalVehicle alloc] init];
-    [vehicle setHubraum: aCapacity];
-    [vehicle setKennzeichen: aPlate];
-    [vehicle setBeginn:beginn];
-    [vehicle setEnde:ende];
-    return vehicle;
+-(id)initWith:(int)aCapacity and: (NSString *)aPlate from:(NSString *)beginn and: (NSString *)ende{
+    if (!(self=[super initWith:aCapacity and:aPlate]))
+        return nil;
+    self.beginn = beginn;
+    self.ende = ende;
+    return self;
 }
 
 -(NSString* )validTill{

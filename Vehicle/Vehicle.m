@@ -10,11 +10,12 @@
 
 @implementation Vehicle
 
--(id)vehicleWith:(int)aCapacity and: (NSString* )aPlate{
-    Vehicle* vehicle = [[Vehicle alloc] init];
-    [vehicle setHubraum: aCapacity];
-    [vehicle setKennzeichen: aPlate];
-    return vehicle;
+-(id)initWith:(int)aCapacity and: (NSString* )aPlate{
+    if (!(self = [super init]))
+        return nil;
+    self.hubraum = aCapacity;
+    self.kennzeichen = aPlate;
+    return self;
 }
 
 -(int)capacity{

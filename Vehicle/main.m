@@ -15,6 +15,10 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
+        //Polymorphie
+        Vehicle *vh = [[SeasonalVehicle alloc]initWith:2000 and:@"123" from:@"Januar" and:@"Februar"];
+        NSLog(@"Polymorphie/Steuer: %f",[vh tax]);
+        
         int hubraum = 0;
         
         printf("Geben Sie bitte den Hubraum des Fahrzeugs ein: ");
@@ -42,7 +46,7 @@ int main(int argc, const char * argv[])
         
         if ([beginn isEqual: @""]) {
             
-            Vehicle *vehicle = [[Vehicle alloc]vehicleWith: hubraum and: inputString];
+            Vehicle *vehicle = [[Vehicle alloc]initWith: hubraum and: inputString];
             
             printf("\nIhre Angaben:\n");
             printf("Hubraum: %i\n", [vehicle capacity]);
@@ -64,7 +68,7 @@ int main(int argc, const char * argv[])
             
             //Print result
             
-            SeasonalVehicle *vehicle = [[SeasonalVehicle alloc] vehicleWith:hubraum and:inputString from:beginn and:ende];
+            SeasonalVehicle *vehicle = [[SeasonalVehicle alloc] initWith:hubraum and:inputString from:beginn and:ende];
             
             printf("\nIhre Angaben:\n");
             printf("Hubraum: %i\n", [vehicle capacity]);
